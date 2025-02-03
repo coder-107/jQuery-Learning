@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Practice of selector</title>
+
+    <!-- CDN Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css
+    ">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js
+    "></script>
+    <!-- jquery -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $(function () {
+            $("button").click(function () {
+                $("p").hide(); // hide by element 
+            });
+
+            // $("button.hide").click(function () {
+            //     $("#test").hide();
+            // }) //Not working //hide by id
+
+            $("#p1").click(function () {
+                alert("You entered p1!");
+            }); //mouseenter,mouseleave,click,dblclick,hover,mouseup,mousedown,focus,blur,on,
+        });
+    </script>
+</head>
+
+<body>
+    <div>
+        <h2>This method is hide text based on the HTML elements</h2>
+        <p>This is a paragraph.</p>
+        <p>This is another paragraph.</p>
+        <button class="btn btn-secondary btn-sm m-3">Click me to hide paragraphs</button>
+    </div>
+
+    <div>
+        <h2>This method is hide text based on the id selector</h2>
+        <p>This is a paragraph.</p>
+        <p id="test">This is another paragraph.</p>
+        <button class="btn btn-primary m-3">Click me</button>
+    </div>
+
+    <div>
+        <h2>This method is hide text based on the various event</h2>
+        <p id="p1">This is a paragraph.</p>
+    </div>
+
+    <div>
+        <button class="btn btn-light btn-sm m-3"><a href="effect.html">jQuery Effect</a></button>
+        <a href="index.html" class="btn btn-danger btn-sm m-3">Back</a>
+    </div>
+
+</body>
+
+</html>

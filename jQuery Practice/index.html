@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Practice</title>
+
+    <!-- CDN Bootstrap -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css
+     ">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js
+     "></script>
+     <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        // For Toggle 
+        $(document).ready(function () {
+                $("#toggle").click(function () {
+                    $("p").toggle();
+                });
+            });
+    </script>
+</head>
+
+<body>
+    <h1>JQuery Prcatice Document</h1>
+
+    <p><strong>Some basic points</strong></p>
+
+    <h3>What is jQuery?</h3>
+    <p>
+    <ul>
+        <li>jQuery is a lightweight, "write less, do more", JavaScript library.</li>
+        <li>The purpose of jQuery is to make it much easier to use JavaScript on your website.</li>
+        <li>jQuery takes a lot of common tasks that require many lines of JavaScript code to accomplish, and wraps them
+            into methods that you can call with a single line of code.</li>
+        <li>jQuery also simplifies a lot of the complicated things from JavaScript, like AJAX calls and DOM
+            manipulation.</li>
+        <strong>
+            <li>The jQuery team knows all about cross-browser issues, and they have written this knowledge into the
+                jQuery library. jQuery will run exactly the same in all major browsers.</li>
+        </strong>
+    </ul>
+    </p>
+
+    <h3>Adding jQuery to Your Web Pages or Project</h3>
+    <p>There are several ways to start using jQuery on your web site. You can: </p>
+    <li>Download the jQuery library from jQuery.com</li>
+    <li>Include jQuery from a CDN, like Google</li>
+
+    <p>Here I use CDN for the practice</p>
+
+    <h3>jQuery Syntax</h3>
+    <ul>
+        <li>The jQuery syntax is tailor-made for selecting HTML elements and performing some action on the element(s).
+        </li>
+        <h4>
+            Basic syntax is: $(selector).action()
+        </h4>
+
+        <li>A $ sign to define/access jQuery <br></li>
+        <li>A (selector) to "query (or find)" HTML elements <br></li>
+        <li>A jQuery action() to be performed on the element(s) <br></li>
+    </ul>
+
+    <h5>Examples:</h5>
+    <p>
+        <li>$(this).hide() - hides the current element.</li>
+        <li>$("p").hide() - hides all <'p'> elements.</li>
+        <li>$(".test").hide() - hides all elements with class="test".</li>
+        <li>$("#test").hide() - hides the element with id="test".</li>
+    </p>
+
+    <h3>The Document Ready Event</h3>
+    <p>This is to prevent any jQuery code from running before the document is finished loading (is ready).</p>
+
+    <p>It is good practice to wait for the document to be fully loaded and ready before working with it. This also allows you to have your JavaScript code before the body of your document, in the head section.</p>
+
+    <div>
+        <h2>Toggle Effect</h2>
+        <p>This is a paragraph with little content.</p>
+        <p>This is another small paragraph.</p>
+        <button class="btn btn-outline-warning m-3" id="toggle">Toggle between hiding and showing the paragraphs</button>
+        <button id="Toggle" class="btn btn-secondery"></button>
+    </div>
+    <a href="one.html" class="btn btn-info m-5 btn-sm">Visit jQuery Demo</a>
+    
+</body>
+
+</html>
