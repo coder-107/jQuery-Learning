@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery with HTML</title>
+
+    <!-- CDN & External -->
+
+    <!-- Bootstrap CDN  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css
+    ">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js
+    "></script>
+
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- External CSS & Js -->
+     <script src="index.js"></script>
+
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-header">
+                <h1>jQuery HTML Introduction
+                    <a href="../Basic of jQuery/index.html" class="btn btn-warning btn-sm float-end ">Please go back to
+                        jQuery Basic</a>
+                </h1>
+            </div>
+
+            <div class="card-body">
+                <b>jQuery contains powerful methods for changing and manipulating HTML elements and attributes.</b>
+                <div class="m-3">
+                    <h5>jQuery DOM Manipulation</h5>
+                    <ul>
+                        <li>One very important part of jQuery is the possibility to manipulate the DOM.</li>
+                        <li> jQuery comes with a bunch of DOM related methods that make it easy to access and manipulate
+                            elements and attributes.</li>
+                    </ul>
+
+                    <strong style="color: #a52a2a;">Here some Information about DOM :</strong>
+                    <ul>
+                        <li>DOM = Document Object Model</li>
+                        <li>The DOM defines a standard for accessing HTML and XML documents</li>
+                        <li>which is a programming interface that represents a web document as a tree structure</li>
+                        <li>This interface allows programs to change the document's style, content, and structure. </li>
+                        <li><b>For more Information : <a
+                                    href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjTwKi-pqeLAxUNbmwGHXYmEnkQFnoECBcQAw&url=https%3A%2F%2Fdeveloper.mozilla.org%2Fen-US%2Fdocs%2FWeb%2FAPI%2FDocument_Object_Model%2FIntroduction%23%3A~%3Atext%3DThe%2520Document%2520Object%2520Model%2520(DOM)%2520is%2520a%2520programming%2520interface%2520for%2Ccan%2520interact%2520with%2520the%2520page.&usg=AOvVaw0k54DcC1P-DYg3MIUliwmf&cshid=1738578814188082&opi=89978449"
+                                    class="btn btn-outline-primary btn-sm" target="_blank">Click here</a></b></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fuild mt-5">
+            <div class="card">
+                <div class="card-header">
+                    <h2>jQuery Get
+                        <a href="jqueryset.html" class="btn btn-outline-success btn-sm float-end m-3">jQuery Set</a>
+                    </h2>
+                    <h4>Introduction</h4>
+                    <p>Three simple, but useful jQuery methods for DOM manipulation are :</p>
+                    <ul>
+                        <li>text() : sets or return the text content of selected elements</li>
+                        <li>html() : stes or return the content of selected elements [including HTML markup] </li>
+                        <li>val() : Sets or returns the value of form fields</li>
+                    </ul>
+
+                    <h4>Get Attribute</h4>
+                    <p><li>The jQuery attr() method is used to get attribute values.</li></p>
+
+                </div>
+
+                <div class="card-body">
+                    <p id="test">This is some <b>bold</b> text in paragraph</p>
+                    <p>Name : <input type="text" id="test2" value="This is value"></p>
+                    <p><a href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" id="link">jQuery CDN</a></p>
+
+                    <button id="btn1" class="btn btn-primary btn-md m-2">Show me text</button>
+                    <button id="btn2" class="btn btn-primary btn-md m-2">Show me html</button>
+                    <button id="btn3" class="btn btn-primary btn-md m-2">Show me value</button>
+                    <button id="btn4" class="btn btn-primary btn-md m-2">Show me attribute</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
